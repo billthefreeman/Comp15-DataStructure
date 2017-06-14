@@ -1,0 +1,132 @@
+provide comp15 hw6 hashfunc.h hashfunc.cpp HashTable.h HashTable.cpp \
+	  song.cpp song.h WordList.cpp WordList.h main.cpp ReadMe.md Makefile
+Hello, flu01<Feiyu Lu>!
+Receiving solution to 'hw6' in class 'comp15'.
+Checking all files:
+    hashfunc.h (190 bytes)
+    hashfunc.cpp (35554 bytes)
+    HashTable.h (1066 bytes)
+    HashTable.cpp (4242 bytes)
+    song.cpp (1841 bytes)
+    song.h (1116 bytes)
+    WordList.cpp (5925 bytes)
+    WordList.h (849 bytes)
+    main.cpp (646 bytes)
+    ReadMe.md (2224 bytes)
+    Makefile (534 bytes)
+Total size of files is 54187 bytes.
+This is submission 7 of assignment hw6 in class 'comp15'.
+
+Are you ready to provide these for testing (yes or no)? 
+assignment was due Sun Dec  7 23:59:00 2014,
+but you submitted it on Tue Dec  9 18:17:27 2014.
+Computing lateness penalty.
+    copying file 'hashfunc.h'
+    copying file 'hashfunc.cpp'
+    copying file 'HashTable.h'
+    copying file 'HashTable.cpp'
+    copying file 'song.cpp'
+    copying file 'song.h'
+    copying file 'WordList.cpp'
+    copying file 'WordList.h'
+    copying file 'main.cpp'
+    copying file 'ReadMe.md'
+    copying file 'Makefile'
+Preparing for testing...
+Checking Late user names...
+Checking Files...
+Making program via Makefile
+No errors!
+No warnings!
+********** Testing poems.txt with search 'nantucket' **********
+poems.txt Passed for 'nantucket'!
+********** Done Testing poems.txt with search 'nantucket' **********
+
+********** Testing poems.txt with search 'ning' **********
+poems.txt Passed for 'ning'!
+********** Done Testing poems.txt with search 'ning' **********
+
+********** Testing poems.txt with search 'till' for frequency only! **********
+poems.txt Passed frequency test for 'till'  but did not check for context correctness!
+********** Done Testing poems.txt with search 'till' **********
+
+********** Testing poems.txt with search 'happy' **********
+poems.txt Passed for 'happy'!
+********** Done Testing poems.txt with search 'happy' **********
+
+********** Testing poems.txt with search 'Shakespeare' **********
+poems.txt Passed for 'Shakespeare'!
+********** Done Testing poems.txt with search 'Shakespeare' **********
+
+********** Testing poems.txt with search 'met' **********
+poems.txt Passed for 'met'!
+********** Done Testing poems.txt with search 'met' **********
+
+********** Testing poems.txt with search 'anothers' **********
+poems.txt Passed for 'anothers'!
+********** Done Testing poems.txt with search 'anothers' **********
+
+********** Testing poems.txt with search 'spoke' **********
+poems.txt Passed for 'spoke'!
+********** Done Testing poems.txt with search 'spoke' **********
+
+********** Testing poems.txt with search 'once' for frequency only! **********
+poems.txt Passed frequency test for 'once'  but did not check for context correctness!
+********** Done Testing poems.txt with search 'once' **********
+
+********** Testing 2316Songs.txt with search 'bart' **********
+2316Songs.txt Passed for 'bart'!
+********** Done Testing 2316Songs.txt with search 'bart' **********
+
+********** Testing 2316Songs.txt with search 'duplicate' **********
+2316Songs.txt Passed for 'duplicate'!
+********** Done Testing 2316Songs.txt with search 'duplicate' **********
+
+********** Testing 2316Songs.txt with search 'realise' for frequency only! **********
+2316Songs.txt Passed frequency test for 'realise'  but did not check for context correctness!
+********** Done Testing 2316Songs.txt with search 'realise' **********
+
+********** Testing 2316Songs.txt with search 'robbie' **********
+2316Songs.txt Passed for 'robbie'!
+********** Done Testing 2316Songs.txt with search 'robbie' **********
+
+********** Testing 2316Songs.txt with search 'Robbie' **********
+2316Songs.txt Passed for 'Robbie'!
+********** Done Testing 2316Songs.txt with search 'Robbie' **********
+
+********** Testing 2316Songs.txt with search 'ROBBIE' **********
+2316Songs.txt Passed for 'ROBBIE'!
+********** Done Testing 2316Songs.txt with search 'ROBBIE' **********
+
+********** Testing 2316Songs.txt with search 'chewed' **********
+2316Songs.txt Passed for 'chewed'!
+********** Done Testing 2316Songs.txt with search 'chewed' **********
+
+********** Testing 2316Songs.txt with search '1234' for frequency only! **********
+2316Songs.txt Passed frequency test for '1234'  but did not check for context correctness!
+********** Done Testing 2316Songs.txt with search '1234' **********
+
+********** Testing 2316Songs.txt with search '54321' **********
+2316Songs.txt Passed for '54321'!
+********** Done Testing 2316Songs.txt with search '54321' **********
+
+********** Testing 2316Songs.txt with search 'Forgettins' **********
+2316Songs.txt Passed for 'Forgettins'!
+********** Done Testing 2316Songs.txt with search 'Forgettins' **********
+
+********** Testing 2316Songs.txt with search 'hello' for frequency only! **********
+2316Songs.txt Passed frequency test for 'hello'  but did not check for context correctness!
+********** Done Testing 2316Songs.txt with search 'hello' **********
+
+********** Testing 2316Songs.txt with search 'tomorrow' for frequency only! **********
+2316Songs.txt Passed frequency test for 'tomorrow'  but did not check for context correctness!
+********** Done Testing 2316Songs.txt with search 'tomorrow' **********
+
+*/*/*/*/*/ All tests passed! /*/*/*/*/*
+
+...done preparing for testing.
+your submission has been accepted!
+cleaning up after testing...
+Cleaning up...
+...done cleaning up after testing
+your submission is complete!

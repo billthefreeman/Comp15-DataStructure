@@ -1,0 +1,1232 @@
+provide comp15 hw6 hashfunc.h hashfunc.cpp HashTable.h HashTable.cpp \
+	  song.cpp song.h WordList.cpp WordList.h main.cpp ReadMe.md Makefile
+Hello, flu01<Feiyu Lu>!
+Receiving solution to 'hw6' in class 'comp15'.
+Checking all files:
+    hashfunc.h (190 bytes)
+    hashfunc.cpp (35554 bytes)
+    HashTable.h (1066 bytes)
+    HashTable.cpp (4242 bytes)
+    song.cpp (1839 bytes)
+    song.h (1116 bytes)
+    WordList.cpp (5823 bytes)
+    WordList.h (849 bytes)
+    main.cpp (584 bytes)
+    ReadMe.md (2224 bytes)
+    Makefile (534 bytes)
+Total size of files is 54021 bytes.
+This is submission 4 of assignment hw6 in class 'comp15'.
+
+Are you ready to provide these for testing (yes or no)? 
+assignment was due Sun Dec  7 23:59:00 2014,
+but you submitted it on Tue Dec  9 17:44:35 2014.
+Computing lateness penalty.
+    copying file 'hashfunc.h'
+    copying file 'hashfunc.cpp'
+    copying file 'HashTable.h'
+    copying file 'HashTable.cpp'
+    copying file 'song.cpp'
+    copying file 'song.h'
+    copying file 'WordList.cpp'
+    copying file 'WordList.h'
+    copying file 'main.cpp'
+    copying file 'ReadMe.md'
+    copying file 'Makefile'
+Preparing for testing...
+Checking Late user names...
+Checking Files...
+Making program via Makefile
+No errors!
+No warnings!
+********** Testing poems.txt with search 'nantucket' **********
+poems.txt Failed on nantucket!
+//---------- database: poems.txt, test input: 'nantucket' ----------
+//---------- Expected output for poems.txt searching for 'nantucket' (first 6000 characters): 
+Title: There Once Was A Man From Nantucket
+Artist: Anonymous
+Context: once was a man from Nantucket Who kept all of his 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'nantucket'.
+
+//---------- Your output for poems.txt searching for 'nantucket' (first 6000 characters): 
+nantucket
+Title: There Once Was A Man From Nantucket
+Artist: Anonymous
+Context: once was a man from Nantucket Who kept all of his 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'nantucket'.
+
+//---------- diff for poems.txt searching for nantucket(first 6000 characters): 
+1d0
+< nantucket
+//---------- End of diff for poems.txt searching for nantucket.
+********** Done Testing poems.txt with search 'nantucket' **********
+
+********** Testing poems.txt with search 'ning' **********
+poems.txt Failed on ning!
+//---------- database: poems.txt, test input: 'ning' ----------
+//---------- Expected output for poems.txt searching for 'ning' (first 6000 characters): 
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: On the Ning Nang Nong Where the Cows 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: BOO! There's a Nong Nang Ning Where the trees go Ping! 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: jabber joo. On the Nong Ning Nang All the mice go 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: when they do! So its Ning Nang Nong Cows go Bong! 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: Cows go Bong! Nong Nang Ning Trees go ping Nong Ning 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: Ning Trees go ping Nong Ning Nang The mice go Clang 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: place to belong is the Ning Nang Ning Nang Nong!! 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: belong is the Ning Nang Ning Nang Nong!! 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'ning'.
+
+//---------- Your output for poems.txt searching for 'ning' (first 6000 characters): 
+ning
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: On the Ning Nang Nong Where the Cows 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: BOO! There's a Nong Nang Ning Where the trees go Ping! 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: jabber joo. On the Nong Ning Nang All the mice go 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: when they do! So its Ning Nang Nong Cows go Bong! 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: Cows go Bong! Nong Nang Ning Trees go ping Nong Ning 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: Ning Trees go ping Nong Ning Nang The mice go Clang 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: place to belong is the Ning Nang Ning Nang Nong!! 
+
+Title: On the Ning Nang Nong
+Artist: Spike Milligan
+Context: belong is the Ning Nang Ning Nang Nong!! 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'ning'.
+
+//---------- diff for poems.txt searching for ning(first 6000 characters): 
+1d0
+< ning
+//---------- End of diff for poems.txt searching for ning.
+********** Done Testing poems.txt with search 'ning' **********
+
+********** Testing poems.txt with search 'till' for frequency only! **********
+poems.txt Failed on till!
+//---------- database: poems.txt, test input: 'till' ----------
+//---------- Expected output for poems.txt searching for 'till' (first 6000 characters): 
+Artist: Robert Service
+Title: The Cremation of Sam McGee
+Count: 3
+
+Artist: Edward Arlington Robinson
+Title: Ben Jonson Entertains a Man from Stratford
+Count: 1
+
+Artist: John Keats	
+Title: On First Looking into Chapman's Homer
+Count: 1
+
+//---------- End of expected output for poems.txt searching for 'till'.
+
+//---------- Your output for poems.txt searching for 'till' (first 6000 characters): 
+Title: The Cremation of Sam McGee
+
+Count: 2
+
+
+Context: hocus-pocus. They've had him dancing till his toes were tender, And 
+Count: 1
+
+Context: I breathe its pure serene Till I heard Chapman speak out 
+Artist: John Keats	
+Count: 1
+
+Title: The Cremation of Sam McGee
+till
+Count: 1
+
+till
+
+Count: 1
+
+//---------- End of your output for poems.txt searching for 'till'.
+
+//---------- diff for poems.txt searching for till(first 6000 characters): 
+0a1
+> Artist: Robert Service
+1a3
+> Count: 3
+3,6c5,6
+< Count: 2
+< 
+< 
+< Context: hocus-pocus. They've had him dancing till his toes were tender, And 
+---
+> Artist: Edward Arlington Robinson
+> Title: Ben Jonson Entertains a Man from Stratford
+9d8
+< Context: I breathe its pure serene Till I heard Chapman speak out 
+11,18c10
+< Count: 1
+< 
+< Title: The Cremation of Sam McGee
+< till
+< Count: 1
+< 
+< till
+< 
+---
+> Title: On First Looking into Chapman's Homer
+//---------- End of diff for poems.txt searching for till.
+********** Done Testing poems.txt with search 'till' **********
+
+********** Testing poems.txt with search 'happy' **********
+poems.txt Failed on happy!
+//---------- database: poems.txt, test input: 'happy' ----------
+//---------- Expected output for poems.txt searching for 'happy' (first 6000 characters): 
+Title: Haiki
+Artist: A 4th Grader
+Context: more syllables there Are you happy now?? 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'happy'.
+
+//---------- Your output for poems.txt searching for 'happy' (first 6000 characters): 
+happy
+Title: Haiki
+Artist: A 4th Grader
+Context: more syllables there Are you happy now?? 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'happy'.
+
+//---------- diff for poems.txt searching for happy(first 6000 characters): 
+1d0
+< happy
+//---------- End of diff for poems.txt searching for happy.
+********** Done Testing poems.txt with search 'happy' **********
+
+********** Testing poems.txt with search 'Shakespeare' **********
+poems.txt Failed on Shakespeare!
+//---------- database: poems.txt, test input: 'Shakespeare' ----------
+//---------- Expected output for poems.txt searching for 'Shakespeare' (first 6000 characters): 
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: it out, Of our man Shakespeare, who alone of us Will 
+
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: denies it, And there's the Shakespeare in him. So, God help 
+
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: this mad, careful, proud, indifferent Shakespeare! Where was it, if it 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'Shakespeare'.
+
+//---------- Your output for poems.txt searching for 'Shakespeare' (first 6000 characters): 
+shakespeare
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: it out, Of our man Shakespeare, who alone of us Will 
+
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: denies it, And there's the Shakespeare in him. So, God help 
+
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: this mad, careful, proud, indifferent Shakespeare! Where was it, if it 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'Shakespeare'.
+
+//---------- diff for poems.txt searching for Shakespeare(first 6000 characters): 
+1d0
+< shakespeare
+//---------- End of diff for poems.txt searching for Shakespeare.
+********** Done Testing poems.txt with search 'Shakespeare' **********
+
+********** Testing poems.txt with search 'met' **********
+poems.txt Failed on met!
+//---------- database: poems.txt, test input: 'met' ----------
+//---------- Expected output for poems.txt searching for 'met' (first 6000 characters): 
+Title: To Newcastle
+Artist: Dorothy Parker
+Context: I met a man the other day- 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'met'.
+
+//---------- Your output for poems.txt searching for 'met' (first 6000 characters): 
+met
+Title: To Newcastle
+Artist: Dorothy Parker
+Context: I met a man the other day- 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'met'.
+
+//---------- diff for poems.txt searching for met(first 6000 characters): 
+1d0
+< met
+//---------- End of diff for poems.txt searching for met.
+********** Done Testing poems.txt with search 'met' **********
+
+********** Testing poems.txt with search 'anothers' **********
+poems.txt Failed on anothers!
+//---------- database: poems.txt, test input: 'anothers' ----------
+//---------- Expected output for poems.txt searching for 'anothers' (first 6000 characters): 
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: his easy distances Than one another's noise and clap-your-shoulder. But think 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'anothers'.
+
+//---------- Your output for poems.txt searching for 'anothers' (first 6000 characters): 
+anothers
+Title: Ben Jonson Entertains a Man from Stratford
+Artist: Edward Arlington Robinson
+Context: his easy distances Than one another's noise and clap-your-shoulder. But think 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'anothers'.
+
+//---------- diff for poems.txt searching for anothers(first 6000 characters): 
+1d0
+< anothers
+//---------- End of diff for poems.txt searching for anothers.
+********** Done Testing poems.txt with search 'anothers' **********
+
+********** Testing poems.txt with search 'spoke' **********
+poems.txt Failed on spoke!
+//---------- database: poems.txt, test input: 'spoke' ----------
+//---------- Expected output for poems.txt searching for 'spoke' (first 6000 characters): 
+Title: To Newcastle
+Artist: Dorothy Parker
+Context: in a thoughtful way, And spoke me so, and spoke me 
+
+Title: To Newcastle
+Artist: Dorothy Parker
+Context: And spoke me so, and spoke me thus: "Oh, dallying's a 
+
+<END OF REPORT>
+//---------- End of expected output for poems.txt searching for 'spoke'.
+
+//---------- Your output for poems.txt searching for 'spoke' (first 6000 characters): 
+spoke
+Title: To Newcastle
+Artist: Dorothy Parker
+Context: in a thoughtful way, And spoke me so, and spoke me 
+
+Title: To Newcastle
+Artist: Dorothy Parker
+Context: And spoke me so, and spoke me thus: "Oh, dallying's a 
+
+<END OF REPORT>
+//---------- End of your output for poems.txt searching for 'spoke'.
+
+//---------- diff for poems.txt searching for spoke(first 6000 characters): 
+1d0
+< spoke
+//---------- End of diff for poems.txt searching for spoke.
+********** Done Testing poems.txt with search 'spoke' **********
+
+********** Testing poems.txt with search 'once' for frequency only! **********
+poems.txt Failed on once!
+//---------- database: poems.txt, test input: 'once' ----------
+//---------- Expected output for poems.txt searching for 'once' (first 6000 characters): 
+Artist: Edward Arlington Robinson
+Title: Ben Jonson Entertains a Man from Stratford
+Count: 8
+
+Artist: Robert Frost	
+Title: For Once, Then, Something
+Count: 2
+
+Artist: Anonymous
+Title: There Once Was A Man From Nantucket
+Count: 1
+
+//---------- End of expected output for poems.txt searching for 'once'.
+
+//---------- Your output for poems.txt searching for 'once' (first 6000 characters): 
+Title: Ben Jonson Entertains a Man from Stratford
+
+Count: 7
+
+
+Context: A pebble of quartz? For once, then, something. 
+Count: 1
+
+
+Context: of fern and cloud puffs. Once, when trying with chin against 
+Count: 1
+
+Context: There once was a man from Nantucket 
+Artist: Anonymous
+Count: 1
+
+Title: Ben Jonson Entertains a Man from Stratford
+once
+Count: 1
+
+once
+
+Count: 1
+
+//---------- End of your output for poems.txt searching for 'once'.
+
+//---------- diff for poems.txt searching for once(first 6000 characters): 
+0a1
+> Artist: Edward Arlington Robinson
+1a3
+> Count: 8
+3c5,7
+< Count: 7
+---
+> Artist: Robert Frost	
+> Title: For Once, Then, Something
+> Count: 2
+5,13d8
+< 
+< Context: A pebble of quartz? For once, then, something. 
+< Count: 1
+< 
+< 
+< Context: of fern and cloud puffs. Once, when trying with chin against 
+< Count: 1
+< 
+< Context: There once was a man from Nantucket 
+15,22c10
+< Count: 1
+< 
+< Title: Ben Jonson Entertains a Man from Stratford
+< once
+< Count: 1
+< 
+< once
+< 
+---
+> Title: There Once Was A Man From Nantucket
+//---------- End of diff for poems.txt searching for once.
+********** Done Testing poems.txt with search 'once' **********
+
+********** Testing 2316Songs.txt with search 'bart' **********
+2316Songs.txt Failed on bart!
+//---------- database: 2316Songs.txt, test input: 'bart' ----------
+//---------- Expected output for 2316Songs.txt searching for 'bart' (first 6000 characters): 
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: them arms while doin' the Bart! Verse 2 [Marquis] Jitterbugs keep 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: Why you frontin'? On the Bart, I'll keep the house jumpin' 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: me, do that dance, the B-A-R-T Just step to the right 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: right and left Do the Bart 'till you're out of breath 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: them arms while doin' the Bart! Verse 3: Brother Marquis It's 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: 3: Brother Marquis It's the Bart, y'all, the brand new dance 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: down! When you're doin' the Bart, you're really gettin' down! When 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: down! When you're doin' the Bart, you're gonna get wet Right 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: Humpty, When you're doin' the Bart, you've gotta get funky! [Kid 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: hustle When you're doin' the Bart, you use every muscle Don't 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: yourself You can do the Bart all by yourself So why 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: get on the floor and Bart to the beat! 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'bart'.
+
+//---------- Your output for 2316Songs.txt searching for 'bart' (first 6000 characters): 
+bart
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: them arms while doin' the Bart! Verse 2 [Marquis] Jitterbugs keep 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: Why you frontin'? On the Bart, I'll keep the house jumpin' 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: me, do that dance, the B-A-R-T Just step to the right 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: right and left Do the Bart 'till you're out of breath 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: them arms while doin' the Bart! Verse 3: Brother Marquis It's 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: 3: Brother Marquis It's the Bart, y'all, the brand new dance 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: down! When you're doin' the Bart, you're really gettin' down! When 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: down! When you're doin' the Bart, you're gonna get wet Right 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: Humpty, When you're doin' the Bart, you've gotta get funky! [Kid 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: hustle When you're doin' the Bart, you use every muscle Don't 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: yourself You can do the Bart all by yourself So why 
+
+Title: Do The Bart 
+Artist: 2 Live Crew
+Context: get on the floor and Bart to the beat! 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'bart'.
+
+//---------- diff for 2316Songs.txt searching for bart(first 6000 characters): 
+1d0
+< bart
+//---------- End of diff for 2316Songs.txt searching for bart.
+********** Done Testing 2316Songs.txt with search 'bart' **********
+
+********** Testing 2316Songs.txt with search 'duplicate' **********
+2316Songs.txt Failed on duplicate!
+//---------- database: 2316Songs.txt, test input: 'duplicate' ----------
+//---------- Expected output for 2316Songs.txt searching for 'duplicate' (first 6000 characters): 
+Title: Hold On Be Strong 
+Artist: 2pac
+Context: murder scene Can't help but duplicate the violence seen on the 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'duplicate'.
+
+//---------- Your output for 2316Songs.txt searching for 'duplicate' (first 6000 characters): 
+duplicate
+Title: Hold On Be Strong 
+Artist: 2pac
+Context: murder scene Can't help but duplicate the violence seen on the 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'duplicate'.
+
+//---------- diff for 2316Songs.txt searching for duplicate(first 6000 characters): 
+1d0
+< duplicate
+//---------- End of diff for 2316Songs.txt searching for duplicate.
+********** Done Testing 2316Songs.txt with search 'duplicate' **********
+
+********** Testing 2316Songs.txt with search 'realise' for frequency only! **********
+2316Songs.txt Failed on realise!
+//---------- database: 2316Songs.txt, test input: 'realise' ----------
+//---------- Expected output for 2316Songs.txt searching for 'realise' (first 6000 characters): 
+Artist: 10 After
+Title: At The End 
+Count: 2
+
+Artist: [spunge]
+Title: Lyrical Content 
+Count: 2
+
+Artist: 10cc
+Title: Old Mister Time 
+Count: 1
+
+Artist: 10cc
+Title: Strange Lover 
+Count: 1
+
+Artist: 1208
+Title: Pick Your Poison 
+Count: 1
+
+Artist: 28 Days
+Title: Eats Away 
+Count: 1
+
+Artist: [spunge]
+Title: Nothing To Hide 
+Count: 1
+
+//---------- End of expected output for 2316Songs.txt searching for 'realise'.
+
+//---------- Your output for 2316Songs.txt searching for 'realise' (first 6000 characters): 
+
+Context: went by, ive come to realise our friendships not the same 
+Count: 2
+
+realise
+
+Count: 2
+
+
+Context: unfair But you've got to realise You have a purpose And 
+Count: 1
+
+Artist: 10cc
+Title: Old Mister Time 
+Count: 1
+
+Context: The time that you waste Realise now that they may never 
+Artist: 28 Days
+Count: 1
+
+Context: You will come to realise that your life is like 
+Artist: [spunge]
+Count: 1
+
+Title: Lyrical Content 
+
+Count: 1
+
+Title: Lyrical Content 
+realise
+Count: 1
+
+Title: Strange Lover 
+realise
+Count: 1
+
+//---------- End of your output for 2316Songs.txt searching for 'realise'.
+
+//---------- diff for 2316Songs.txt searching for realise(first 6000 characters): 
+1,2c1,2
+< 
+< Context: went by, ive come to realise our friendships not the same 
+---
+> Artist: 10 After
+> Title: At The End 
+5,6c5,6
+< realise
+< 
+---
+> Artist: [spunge]
+> Title: Lyrical Content 
+9,12d8
+< 
+< Context: unfair But you've got to realise You have a purpose And 
+< Count: 1
+< 
+17,22c13,14
+< Context: The time that you waste Realise now that they may never 
+< Artist: 28 Days
+< Count: 1
+< 
+< Context: You will come to realise that your life is like 
+< Artist: [spunge]
+---
+> Artist: 10cc
+> Title: Strange Lover 
+25,26c17,18
+< Title: Lyrical Content 
+< 
+---
+> Artist: 1208
+> Title: Pick Your Poison 
+29,30c21,22
+< Title: Lyrical Content 
+< realise
+---
+> Artist: 28 Days
+> Title: Eats Away 
+33,34c25,26
+< Title: Strange Lover 
+< realise
+---
+> Artist: [spunge]
+> Title: Nothing To Hide 
+//---------- End of diff for 2316Songs.txt searching for realise.
+********** Done Testing 2316Songs.txt with search 'realise' **********
+
+********** Testing 2316Songs.txt with search 'robbie' **********
+2316Songs.txt Failed on robbie!
+//---------- database: 2316Songs.txt, test input: 'robbie' ----------
+//---------- Expected output for 2316Songs.txt searching for 'robbie' (first 6000 characters): 
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: tears for my culture - Robbie: Fall back again Crawl from 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: water to air you're on 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: word over this broad earth -Robbie & Maxi jazz: This is 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: Fall back again Crawl from 
+
+Title: One Week 
+Artist: 10 Things I Hate About You
+Context: Birchmount Stadium, home of the Robbie. 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'robbie'.
+
+//---------- Your output for 2316Songs.txt searching for 'robbie' (first 6000 characters): 
+robbie
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: tears for my culture - Robbie: Fall back again Crawl from 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: water to air you're on 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: word over this broad earth -Robbie & Maxi jazz: This is 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: Fall back again Crawl from 
+
+robbie
+Title: One Week 
+Artist: 10 Things I Hate About You
+Context: Birchmount Stadium, home of the Robbie. 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'robbie'.
+
+//---------- diff for 2316Songs.txt searching for robbie(first 6000 characters): 
+1d0
+< robbie
+18d16
+< robbie
+//---------- End of diff for 2316Songs.txt searching for robbie.
+********** Done Testing 2316Songs.txt with search 'robbie' **********
+
+********** Testing 2316Songs.txt with search 'Robbie' **********
+2316Songs.txt Failed on Robbie!
+//---------- database: 2316Songs.txt, test input: 'Robbie' ----------
+//---------- Expected output for 2316Songs.txt searching for 'Robbie' (first 6000 characters): 
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: tears for my culture - Robbie: Fall back again Crawl from 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: water to air you're on 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: word over this broad earth -Robbie & Maxi jazz: This is 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: Fall back again Crawl from 
+
+Title: One Week 
+Artist: 10 Things I Hate About You
+Context: Birchmount Stadium, home of the Robbie. 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'Robbie'.
+
+//---------- Your output for 2316Songs.txt searching for 'Robbie' (first 6000 characters): 
+robbie
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: tears for my culture - Robbie: Fall back again Crawl from 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: water to air you're on 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: word over this broad earth -Robbie & Maxi jazz: This is 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: Fall back again Crawl from 
+
+robbie
+Title: One Week 
+Artist: 10 Things I Hate About You
+Context: Birchmount Stadium, home of the Robbie. 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'Robbie'.
+
+//---------- diff for 2316Songs.txt searching for Robbie(first 6000 characters): 
+1d0
+< robbie
+18d16
+< robbie
+//---------- End of diff for 2316Songs.txt searching for Robbie.
+********** Done Testing 2316Songs.txt with search 'Robbie' **********
+
+********** Testing 2316Songs.txt with search 'ROBBIE' **********
+2316Songs.txt Failed on ROBBIE!
+//---------- database: 2316Songs.txt, test input: 'ROBBIE' ----------
+//---------- Expected output for 2316Songs.txt searching for 'ROBBIE' (first 6000 characters): 
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: tears for my culture - Robbie: Fall back again Crawl from 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: water to air you're on 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: word over this broad earth -Robbie & Maxi jazz: This is 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: Fall back again Crawl from 
+
+Title: One Week 
+Artist: 10 Things I Hate About You
+Context: Birchmount Stadium, home of the Robbie. 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'ROBBIE'.
+
+//---------- Your output for 2316Songs.txt searching for 'ROBBIE' (first 6000 characters): 
+robbie
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: tears for my culture - Robbie: Fall back again Crawl from 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: water to air you're on 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: word over this broad earth -Robbie & Maxi jazz: This is 
+
+Title: My Culture 
+Artist: 1 Giant Leap
+Context: Jazz: for my culture - Robbie: Fall back again Crawl from 
+
+robbie
+Title: One Week 
+Artist: 10 Things I Hate About You
+Context: Birchmount Stadium, home of the Robbie. 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'ROBBIE'.
+
+//---------- diff for 2316Songs.txt searching for ROBBIE(first 6000 characters): 
+1d0
+< robbie
+18d16
+< robbie
+//---------- End of diff for 2316Songs.txt searching for ROBBIE.
+********** Done Testing 2316Songs.txt with search 'ROBBIE' **********
+
+********** Testing 2316Songs.txt with search 'chewed' **********
+2316Songs.txt Failed on chewed!
+//---------- database: 2316Songs.txt, test input: 'chewed' ----------
+//---------- Expected output for 2316Songs.txt searching for 'chewed' (first 6000 characters): 
+Title: Destiny Never Came 
+Artist: 100 Demons
+Context: and I did shout. They chewed me up and spit me 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'chewed'.
+
+//---------- Your output for 2316Songs.txt searching for 'chewed' (first 6000 characters): 
+chewed
+Title: Destiny Never Came 
+Artist: 100 Demons
+Context: and I did shout. They chewed me up and spit me 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'chewed'.
+
+//---------- diff for 2316Songs.txt searching for chewed(first 6000 characters): 
+1d0
+< chewed
+//---------- End of diff for 2316Songs.txt searching for chewed.
+********** Done Testing 2316Songs.txt with search 'chewed' **********
+
+********** Testing 2316Songs.txt with search '1234' for frequency only! **********
+2316Songs.txt Failed on 1234!
+//---------- database: 2316Songs.txt, test input: '1234' ----------
+//---------- Expected output for 2316Songs.txt searching for '1234' (first 6000 characters): 
+Artist: 2 Minutos
+Title: Todo Lo Miro 
+Count: 1
+
+Artist: 2 Unlimited
+Title: The Magic Friend 
+Count: 1
+
+Artist: 30 Foot Fall
+Title: Cheese 
+Count: 1
+
+//---------- End of expected output for 2316Songs.txt searching for '1234'.
+
+//---------- Your output for 2316Songs.txt searching for '1234' (first 6000 characters): 
+
+Context: [RAY:] 1-2-3-4! [RAY:] Don't just stand there, 
+Count: 1
+
+1234
+
+Count: 1
+
+Context: 1-2-3-4 Gonna go see a punk 
+Artist: 30 Foot Fall
+Count: 1
+
+Title: Todo Lo Miro 
+1234
+Count: 1
+
+//---------- End of your output for 2316Songs.txt searching for '1234'.
+
+//---------- diff for 2316Songs.txt searching for 1234(first 6000 characters): 
+1,2c1,2
+< 
+< Context: [RAY:] 1-2-3-4! [RAY:] Don't just stand there, 
+---
+> Artist: 2 Minutos
+> Title: Todo Lo Miro 
+5,6c5,6
+< 1234
+< 
+---
+> Artist: 2 Unlimited
+> Title: The Magic Friend 
+9d8
+< Context: 1-2-3-4 Gonna go see a punk 
+11,14c10
+< Count: 1
+< 
+< Title: Todo Lo Miro 
+< 1234
+---
+> Title: Cheese 
+//---------- End of diff for 2316Songs.txt searching for 1234.
+********** Done Testing 2316Songs.txt with search '1234' **********
+
+********** Testing 2316Songs.txt with search '54321' **********
+2316Songs.txt Failed on 54321!
+//---------- database: 2316Songs.txt, test input: '54321' ----------
+//---------- Expected output for 2316Songs.txt searching for '54321' (first 6000 characters): 
+Title: Let's Go 
+Artist: 13 Needles
+Context: gusto mong iparating [Chorus 1] 5-4-3-2-1 let's go (Sabay-sabay n tayo) 
+
+Title: Let's Go 
+Artist: 13 Needles
+Context: [Repeat Chorus 1] [Chorus 2] 5-4-3-2-1 let's go (Sabay-sabay na tayo) 
+
+Title: Let's Go 
+Artist: 13 Needles
+Context: ang bukas na kay ganda 5-4-3-2-1 let's go [Repeat Chorus 1 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for '54321'.
+
+//---------- Your output for 2316Songs.txt searching for '54321' (first 6000 characters): 
+54321
+Title: Let's Go 
+Artist: 13 Needles
+Context: gusto mong iparating [Chorus 1] 5-4-3-2-1 let's go (Sabay-sabay n tayo) 
+
+Title: Let's Go 
+Artist: 13 Needles
+Context: [Repeat Chorus 1] [Chorus 2] 5-4-3-2-1 let's go (Sabay-sabay na tayo) 
+
+Title: Let's Go 
+Artist: 13 Needles
+Context: ang bukas na kay ganda 5-4-3-2-1 let's go [Repeat Chorus 1 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for '54321'.
+
+//---------- diff for 2316Songs.txt searching for 54321(first 6000 characters): 
+1d0
+< 54321
+//---------- End of diff for 2316Songs.txt searching for 54321.
+********** Done Testing 2316Songs.txt with search '54321' **********
+
+********** Testing 2316Songs.txt with search 'Forgettins' **********
+2316Songs.txt Failed on Forgettins!
+//---------- database: 2316Songs.txt, test input: 'Forgettins' ----------
+//---------- Expected output for 2316Songs.txt searching for 'Forgettins' (first 6000 characters): 
+Title: Danielle 
+Artist: 30 Odd Foot Of Grunts
+Context: While I try to forget Forgettin's only temporary In the middle 
+
+<END OF REPORT>
+//---------- End of expected output for 2316Songs.txt searching for 'Forgettins'.
+
+//---------- Your output for 2316Songs.txt searching for 'Forgettins' (first 6000 characters): 
+forgettins
+Title: Danielle 
+Artist: 30 Odd Foot Of Grunts
+Context: While I try to forget Forgettin's only temporary In the middle 
+
+<END OF REPORT>
+//---------- End of your output for 2316Songs.txt searching for 'Forgettins'.
+
+//---------- diff for 2316Songs.txt searching for Forgettins(first 6000 characters): 
+1d0
+< forgettins
+//---------- End of diff for 2316Songs.txt searching for Forgettins.
+********** Done Testing 2316Songs.txt with search 'Forgettins' **********
+
+********** Testing 2316Songs.txt with search 'hello' for frequency only! **********
+2316Songs.txt Failed on hello!
+//---------- database: 2316Songs.txt, test input: 'hello' ----------
+//---------- Expected output for 2316Songs.txt searching for 'hello' (first 6000 characters): 
+Artist: 1tym
+Title: Hello (Traducao) 
+Count: 10
+
+Artist: 17 Heaven
+Title: Penthouse And Pavement (Single Version) 
+Count: 4
+
+Artist: 10cc
+Title: Marriage Bureau Rendezvous 
+Count: 2
+
+Artist: 16 Horsepower
+Title: Low Estate 
+Count: 2
+
+Artist: 2pac
+Title: What'z Ya No. Number 
+Count: 2
+
+//---------- End of expected output for 2316Songs.txt searching for 'hello'.
+
+//---------- Your output for 2316Songs.txt searching for 'hello' (first 6000 characters): 
+*****Your output includes more than ten songs!*****
+
+Title: Hello (Traducao) 
+
+Count: 9
+
+hello
+
+Count: 3
+
+Artist: 16 Horsepower
+Title: Low Estate 
+Count: 2
+
+//---------- End of your output for 2316Songs.txt searching for 'hello'.
+
+//---------- diff for 2316Songs.txt searching for hello(first 6000 characters): 
+1,2c1
+< *****Your output includes more than ten songs!*****
+< 
+---
+> Artist: 1tym
+3a3
+> Count: 10
+5,7c5,7
+< Count: 9
+< 
+< hello
+---
+> Artist: 17 Heaven
+> Title: Penthouse And Pavement (Single Version) 
+> Count: 4
+9c9,11
+< Count: 3
+---
+> Artist: 10cc
+> Title: Marriage Bureau Rendezvous 
+> Count: 2
+14a17,20
+> Artist: 2pac
+> Title: What'z Ya No. Number 
+> Count: 2
+> 
+//---------- End of diff for 2316Songs.txt searching for hello.
+********** Done Testing 2316Songs.txt with search 'hello' **********
+
+********** Testing 2316Songs.txt with search 'tomorrow' for frequency only! **********
+2316Songs.txt Failed on tomorrow!
+//---------- database: 2316Songs.txt, test input: 'tomorrow' ----------
+//---------- Expected output for 2316Songs.txt searching for 'tomorrow' (first 6000 characters): 
+Artist: 30 Foot Fall
+Title: Which Way To Go Kaboom 
+Count: 5
+
+Artist: 3 Doors Down
+Title: Live For Today 
+Count: 4
+
+Artist: 13 Needles
+Title: Cab One 
+Count: 3
+
+Artist: 18 Summers
+Title: Some Words In A Diary 
+Count: 3
+
+Artist: 24 Hours Ago
+Title: Tomorrow Ends Today 
+Count: 3
+
+//---------- End of expected output for 2316Songs.txt searching for 'tomorrow'.
+
+//---------- Your output for 2316Songs.txt searching for 'tomorrow' (first 6000 characters): 
+*****Your output includes more than ten songs!*****
+
+
+Context: regret yesterday Were not handed tomorrow so i'll live for today 
+Count: 4
+
+Title: Which Way To Go Kaboom 
+
+Count: 4
+
+Artist: 18 Summers
+Title: Some Words In A Diary 
+Count: 3
+
+tomorrow
+
+Count: 3
+
+Artist: 1life
+Title: Stars Don't Fall 
+Count: 2
+
+Title: Tomorrow Ends Today 
+
+Count: 2
+
+//---------- End of your output for 2316Songs.txt searching for 'tomorrow'.
+
+//---------- diff for 2316Songs.txt searching for tomorrow(first 6000 characters): 
+1,6c1
+< *****Your output includes more than ten songs!*****
+< 
+< 
+< Context: regret yesterday Were not handed tomorrow so i'll live for today 
+< Count: 4
+< 
+---
+> Artist: 30 Foot Fall
+7a3
+> Count: 5
+8a5,6
+> Artist: 3 Doors Down
+> Title: Live For Today 
+11,12c9,10
+< Artist: 18 Summers
+< Title: Some Words In A Diary 
+---
+> Artist: 13 Needles
+> Title: Cab One 
+15,16c13,14
+< tomorrow
+< 
+---
+> Artist: 18 Summers
+> Title: Some Words In A Diary 
+19,22c17
+< Artist: 1life
+< Title: Stars Don't Fall 
+< Count: 2
+< 
+---
+> Artist: 24 Hours Ago
+24,25c19
+< 
+< Count: 2
+---
+> Count: 3
+//---------- End of diff for 2316Songs.txt searching for tomorrow.
+********** Done Testing 2316Songs.txt with search 'tomorrow' **********
+
+*/*/*/*/*/ Some of the tests failed! /*/*/*/*/*
+Tests that failed: poems.txt_nantucket, poems.txt_ning, poems.txt_till, poems.txt_happy, poems.txt_Shakespeare, poems.txt_met, poems.txt_anothers, poems.txt_spoke, poems.txt_once, 2316Songs.txt_bart, 2316Songs.txt_duplicate, 2316Songs.txt_realise, 2316Songs.txt_robbie, 2316Songs.txt_Robbie, 2316Songs.txt_ROBBIE, 2316Songs.txt_chewed, 2316Songs.txt_1234, 2316Songs.txt_54321, 2316Songs.txt_Forgettins, 2316Songs.txt_hello, 2316Songs.txt_tomorrow, 
+
+...done preparing for testing.
+your submission has been accepted!
+cleaning up after testing...
+Cleaning up...
+...done cleaning up after testing
+your submission is complete!

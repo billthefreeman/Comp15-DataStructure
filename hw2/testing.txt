@@ -1,0 +1,502 @@
+provide comp15 hw2 main.cpp List_linked_list.cpp List_linked_list.h \
+	        hand.cpp hand.h card.cpp card.h \
+	        ReadMe.md Makefile
+Hello, flu01<Feiyu Lu>!
+Receiving solution to 'hw2' in class 'comp15'.
+Checking all files:
+    main.cpp (954 bytes)
+    List_linked_list.cpp (7798 bytes)
+    List_linked_list.h (2455 bytes)
+    hand.cpp (2655 bytes)
+    hand.h (1035 bytes)
+    card.cpp (1397 bytes)
+    card.h (684 bytes)
+    ReadMe.md (302 bytes)
+    Makefile (434 bytes)
+Total size of files is 17714 bytes.
+This is submission 6 of assignment hw2 in class 'comp15'.
+
+Are you ready to provide these for testing (yes or no)? 
+    copying file 'main.cpp'
+    copying file 'List_linked_list.cpp'
+    copying file 'List_linked_list.h'
+    copying file 'hand.cpp'
+    copying file 'hand.h'
+    copying file 'card.cpp'
+    copying file 'card.h'
+    copying file 'ReadMe.md'
+    copying file 'Makefile'
+Preparing for testing...
+Checking Files...
+Making program via Makefile
+No errors!
+No warnings!
+********** Testing main1.cpp **********
+// Test: Creates a hand, fills the hand with AD,10H,5S,2C,9C, and prints
+main1.cpp Passed!
+********** Done Testing main1.cpp **********
+
+********** Testing main2.cpp **********
+// Test: tests the insert_at_head() method
+main2.cpp Passed!
+********** Done Testing main2.cpp **********
+
+********** Testing main3.cpp **********
+// Test: tests the insert_at_index() method
+main3.cpp Passed!
+********** Done Testing main3.cpp **********
+
+********** Testing main4.cpp **********
+// Test: tests the replace_at_index() method
+main4.cpp Passed!
+********** Done Testing main4.cpp **********
+
+********** Testing main5.cpp **********
+// Test: tests the card_at() method
+main5.cpp Passed!
+********** Done Testing main5.cpp **********
+
+********** Testing main6.cpp **********
+// Test: tests the has_card() method
+main6.cpp Passed!
+********** Done Testing main6.cpp **********
+
+********** Testing main7.cpp **********
+// Test: tests the remove() method
+main7.cpp Failed!
+//---------- test program code: main7.cpp ----------
+// Test: tests the remove() method
+/*
+ * main7.cpp
+ *
+ *  Created on: Aug 27, 2014
+ *      Author: chrisgregg
+ */
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+#include "hand.h"
+
+using namespace std;
+
+int main() {
+	List_linked_list ll;
+
+	Card c('A','D');
+
+	// attempt to remove with empty list
+	c.print_card();
+	cout << (ll.remove(c) ?
+			" was removed" : " was not removed") << "\n";
+
+	ll.insert_at_index(c,0);
+
+	c.set_suit(HEART);
+	c.set_rank(TEN);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(SPADE);
+	c.set_rank(FIVE);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(CLUB);
+	c.set_rank(TWO);
+	ll.insert_at_index(c,0);
+
+	c.set_rank(NINE);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(HEART);
+	c.set_rank(FOUR);
+	ll.insert_at_index(c,0);
+	ll.print_list();
+
+	c.print_card();
+	cout << (ll.remove(c) ?
+			" was removed" : " was not removed") << "\n";
+
+	c.set_suit(CLUB);
+	c.print_card();
+	cout << (ll.remove(c) ?
+			" was removed" : " was not removed") << "\n";
+
+	c.set_rank(TWO);
+	c.print_card();
+	cout << (ll.remove(c) ?
+			" was removed" : " was not removed") << "\n";
+
+	c.set_rank(FIVE);
+	c.print_card();
+	cout << (ll.remove(c) ?
+			" was removed" : " was not removed") << "\n";
+
+	return 0;
+}
+//---------- end test program code ----------
+
+//---------- Expected output for main7.cpp (first 50 lines): 
+AD was not removed
+4H,9C,2C,5S,TH,AD
+4H was removed
+4C was not removed
+2C was removed
+5C was not removed
+//---------- End of expected output for main7.cpp.
+
+//---------- Your output for main7.cpp (first 50 lines): 
+AD was not removed
+4H,9C,2C,5S,TH,AD
+4H was removed
+4C was not removed
+2C was not removed
+5C was not removed
+//---------- End of your output for main7.cpp.
+
+//---------- diff for main7.cpp (first 50 lines): 
+5c5
+< 2C was removed
+---
+> 2C was not removed
+//---------- End of diff for main7.cpp.
+********** Done Testing main7.cpp **********
+
+********** Testing main8.cpp **********
+// Test: tests the remove_from_head() method
+main8.cpp Passed!
+********** Done Testing main8.cpp **********
+
+********** Testing main9.cpp **********
+// Test: tests the remove_from_tail() method
+main9.cpp Failed!
+//---------- test program code: main9.cpp ----------
+// Test: tests the remove_from_tail() method
+/*
+ * main9.cpp
+ *
+ *  Created on: Aug 27, 2014
+ *      Author: chrisgregg
+ */
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+#include "hand.h"
+
+using namespace std;
+
+int main() {
+	List_linked_list ll;
+
+	Card c('A','D');
+
+	ll.insert_at_index(c,0);
+
+	c.set_suit(HEART);
+	c.set_rank(TEN);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(SPADE);
+	c.set_rank(FIVE);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(CLUB);
+	c.set_rank(TWO);
+	ll.insert_at_index(c,0);
+
+	c.set_rank(NINE);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(HEART);
+	c.set_rank(FOUR);
+	ll.insert_at_index(c,0);
+	ll.print_list();
+
+	for (int i=0;i<6;i++) {
+		cout << "Removed ";
+		ll.remove_from_tail().print_card();
+		cout << "\n";
+		ll.print_list();
+	}
+
+	return 0;
+}
+//---------- end test program code ----------
+
+//---------- Expected output for main9.cpp (first 50 lines): 
+4H,9C,2C,5S,TH,AD
+Removed AD
+4H,9C,2C,5S,TH
+Removed TH
+4H,9C,2C,5S
+Removed 5S
+4H,9C,2C
+Removed 2C
+4H,9C
+Removed 9C
+4H
+Removed 4H
+//---------- End of expected output for main9.cpp.
+
+//---------- Your output for main9.cpp (first 50 lines): 
+GOT SIGNAL 139 ./hw2
+//---------- End of your output for main9.cpp.
+(It looks like your program had a seg fault.)
+
+//---------- diff for main9.cpp (first 50 lines): 
+1,12c1
+< 4H,9C,2C,5S,TH,AD
+< Removed AD
+< 4H,9C,2C,5S,TH
+< Removed TH
+< 4H,9C,2C,5S
+< Removed 5S
+< 4H,9C,2C
+< Removed 2C
+< 4H,9C
+< Removed 9C
+< 4H
+< Removed 4H
+---
+> GOT SIGNAL 139 ./hw2
+//---------- End of diff for main9.cpp.
+********** Done Testing main9.cpp **********
+
+********** Testing main10.cpp **********
+// Test: tests the remove_from_index() method
+main10.cpp Failed!
+//---------- test program code: main10.cpp ----------
+// Test: tests the remove_from_index() method
+/*
+ * main10.cpp
+ *
+ *  Created on: Aug 27, 2014
+ *      Author: chrisgregg
+ */
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+#include "hand.h"
+
+using namespace std;
+
+int main() {
+	List_linked_list ll;
+
+	Card c('A','D');
+
+	ll.insert_at_index(c,0);
+
+	c.set_suit(HEART);
+	c.set_rank(TEN);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(SPADE);
+	c.set_rank(FIVE);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(CLUB);
+	c.set_rank(TWO);
+	ll.insert_at_index(c,0);
+
+	c.set_rank(NINE);
+	ll.insert_at_index(c,0);
+
+	c.set_suit(HEART);
+	c.set_rank(FOUR);
+	ll.insert_at_index(c,0);
+	ll.print_list();
+
+	int rand_order[6] = {1,0,3,1,1,0};
+	for (int i=0;i<6;i++) {
+		cout << "Removed ";
+		ll.remove_from_index(rand_order[i]).print_card();
+		cout << "\n";
+		ll.print_list();
+	}
+
+	return 0;
+}
+//---------- end test program code ----------
+
+//---------- Expected output for main10.cpp (first 50 lines): 
+4H,9C,2C,5S,TH,AD
+Removed 9C
+4H,2C,5S,TH,AD
+Removed 4H
+2C,5S,TH,AD
+Removed AD
+2C,5S,TH
+Removed 5S
+2C,TH
+Removed TH
+2C
+Removed 2C
+//---------- End of expected output for main10.cpp.
+
+//---------- Your output for main10.cpp (first 50 lines): 
+GOT SIGNAL 139 ./hw2
+//---------- End of your output for main10.cpp.
+(It looks like your program had a seg fault.)
+
+//---------- diff for main10.cpp (first 50 lines): 
+1,12c1
+< 4H,9C,2C,5S,TH,AD
+< Removed 9C
+< 4H,2C,5S,TH,AD
+< Removed 4H
+< 2C,5S,TH,AD
+< Removed AD
+< 2C,5S,TH
+< Removed 5S
+< 2C,TH
+< Removed TH
+< 2C
+< Removed 2C
+---
+> GOT SIGNAL 139 ./hw2
+//---------- End of diff for main10.cpp.
+********** Done Testing main10.cpp **********
+
+********** Testing main11.cpp **********
+// Test: tests the cards_in_hand() method
+main11.cpp Failed!
+//---------- test program code: main11.cpp ----------
+// Test: tests the cards_in_hand() method
+/*
+ * main11.cpp
+ *
+ *  Created on: Aug 27, 2014
+ *      Author: chrisgregg
+ */
+#include <iostream>
+#include <cstdlib>
+#include <time.h>
+
+#include "hand.h"
+
+using namespace std;
+
+int main() {
+	List_linked_list ll;
+
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+	Card c('A','D');
+
+	ll.insert_at_index(c,0);
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+
+	c.set_suit(HEART);
+	c.set_rank(TEN);
+	ll.insert_at_index(c,0);
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+
+	c.set_suit(SPADE);
+	c.set_rank(FIVE);
+	ll.insert_at_index(c,0);
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+
+	c.set_suit(CLUB);
+	c.set_rank(TWO);
+	ll.insert_at_index(c,0);
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+
+	c.set_rank(NINE);
+	ll.insert_at_index(c,0);
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+
+	c.set_suit(HEART);
+	c.set_rank(FOUR);
+	ll.insert_at_index(c,0);
+	ll.print_list();
+	cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+
+	int rand_order[6] = {1,0,3,1,1,0};
+	for (int i=0;i<6;i++) {
+		cout << "Removed ";
+		ll.remove_from_index(rand_order[i]).print_card();
+		cout << "\n";
+		ll.print_list();
+		cout << "Cards in hand: " << ll.cards_in_hand() << "\n";
+	}
+
+	return 0;
+}
+//---------- end test program code ----------
+
+//---------- Expected output for main11.cpp (first 50 lines): 
+Cards in hand: 0
+Cards in hand: 1
+Cards in hand: 2
+Cards in hand: 3
+Cards in hand: 4
+Cards in hand: 5
+4H,9C,2C,5S,TH,AD
+Cards in hand: 6
+Removed 9C
+4H,2C,5S,TH,AD
+Cards in hand: 5
+Removed 4H
+2C,5S,TH,AD
+Cards in hand: 4
+Removed AD
+2C,5S,TH
+Cards in hand: 3
+Removed 5S
+2C,TH
+Cards in hand: 2
+Removed TH
+2C
+Cards in hand: 1
+Removed 2C
+Cards in hand: 0
+//---------- End of expected output for main11.cpp.
+
+//---------- Your output for main11.cpp (first 50 lines): 
+GOT SIGNAL 139 ./hw2
+//---------- End of your output for main11.cpp.
+(It looks like your program had a seg fault.)
+
+//---------- diff for main11.cpp (first 50 lines): 
+1,25c1
+< Cards in hand: 0
+< Cards in hand: 1
+< Cards in hand: 2
+< Cards in hand: 3
+< Cards in hand: 4
+< Cards in hand: 5
+< 4H,9C,2C,5S,TH,AD
+< Cards in hand: 6
+< Removed 9C
+< 4H,2C,5S,TH,AD
+< Cards in hand: 5
+< Removed 4H
+< 2C,5S,TH,AD
+< Cards in hand: 4
+< Removed AD
+< 2C,5S,TH
+< Cards in hand: 3
+< Removed 5S
+< 2C,TH
+< Cards in hand: 2
+< Removed TH
+< 2C
+< Cards in hand: 1
+< Removed 2C
+< Cards in hand: 0
+---
+> GOT SIGNAL 139 ./hw2
+//---------- End of diff for main11.cpp.
+********** Done Testing main11.cpp **********
+
+********** Testing main12.cpp **********
+// Test: tests 25000 entries
+main12.cpp Passed!
+********** Done Testing main12.cpp **********
+
+*/*/*/*/*/ Some of the tests failed! /*/*/*/*/*
+
+...done preparing for testing.
+your submission has been accepted!
+your submission is complete!

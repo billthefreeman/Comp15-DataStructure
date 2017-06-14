@@ -1,0 +1,42 @@
+provide comp15 hw2 main.cpp List_linked_list.cpp List_linked_list.h \
+	        hand.cpp hand.h card.cpp card.h \
+	        ReadMe.md Makefile
+Hello, flu01<Feiyu Lu>!
+Receiving solution to 'hw2' in class 'comp15'.
+Checking all files:
+    main.cpp (525 bytes)
+    List_linked_list.cpp (7516 bytes)
+    List_linked_list.h (2455 bytes)
+    hand.cpp (2655 bytes)
+    hand.h (1035 bytes)
+    card.cpp (1397 bytes)
+    card.h (684 bytes)
+    ReadMe.md (302 bytes)
+    Makefile (434 bytes)
+Total size of files is 17003 bytes.
+This is submission 3 of assignment hw2 in class 'comp15'.
+
+Are you ready to provide these for testing (yes or no)? 
+OK, I won't provide them to the grader.
+This submission doesn't count. Please try again later!
+provide comp15 hw2 main.cpp List_linked_list.cpp List_linked_list.h \
+	        hand.cpp hand.h card.cpp card.h \
+	        ReadMe.md Makefile
+Hello, flu01<Feiyu Lu>!
+Receiving solution to 'hw2' in class 'comp15'.
+Checking all files:
+    main.cpp (525 bytes)
+    List_linked_list.cpp (7516 bytes)
+    List_linked_list.h (2455 bytes)
+    hand.cpp (2655 bytes)
+    hand.h (1035 bytes)
+    card.cpp (1397 bytes)
+    card.h (684 bytes)
+    ReadMe.md (302 bytes)
+    Makefile (434 bytes)
+Total size of files is 17003 bytes.
+This is submission 3 of assignment hw2 in class 'comp15'.
+
+Are you ready to provide these for testing (yes or no)? 
+OK, I won't provide them to the grader.
+This submission doesn't count. Please try again later!
